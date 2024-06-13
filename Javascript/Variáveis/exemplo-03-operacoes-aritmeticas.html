@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operações Aritméticas</h1>
+    <p>Pedir para o usuário digitar 2 números inteiros e mostrar a soma, multiplicação, subtração e divisão.</p>
+    <script>
+        let inteiro1 = parseInt(prompt("Digite um número inteiro:"))
+        let inteiro2 = parseInt(prompt("Digite outro número inteiro:"))
+        
+        let soma = inteiro1 + inteiro2
+        let subtracao = inteiro1 - inteiro2
+        let multiplicacao = inteiro1 * inteiro2
+        let divisao = inteiro1 / inteiro2
+
+        alert('Os valores das operações com os números '+ inteiro1 + ' e ' + inteiro2 + ' são:'+
+        '\nsoma: ' + 
+        soma + 
+        '\nsubtração: ' + 
+        subtracao +
+         '\nMultiplicação: ' +
+        multiplicacao +
+        '\ndivisão: ' +
+        divisao +
+        '\nmodulo: ' +
+        (inteiro1 % inteiro2) // Pode ser feito desta forma também evitando a criação de variáveis
+    )
+
+    </script>
+</body>
+</html>
