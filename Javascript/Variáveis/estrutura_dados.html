@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Boolean, Number e String - typeof</h1>
+    <script>
+        let mensagem = 'olá eu sou uma "mensagem de texto"'
+        console.log(mensagem)
+        let mensagem2 = "olá eu sou uma 'mensagem 2 de texto'"
+        console.log(mensagem2)
+        let mensagem3 = "olá eu sou uma \"mensagem 3 de texto\""
+        console.log(mensagem3)
+
+        // typeof --> para ver o tipo da variável
+        console.log(typeof 0)
+        console.log(typeof "0")
+        console.log(typeof String(0))
+        
+
+
+        // Variáveis booleanas
+        let isValid = true
+
+        console.log(typeof isValid)
+
+        console.log(Boolean(0))
+        console.log(Boolean('0'))
+        console.log(Boolean(undefined))
+        console.log(Boolean(null))
+        console.log(Boolean(NaN))
+        console.log(Boolean(''))
+
+        // undefile e null
+        let naoDeclarado // recebe o valor undefined. Ou seja, a variável existe mas não há nada nela 
+        console.log(naoDeclarado)
+        naoDeclarado = null // null significa ausencia de valor
+        console.log(naoDeclarado)
+
+        // NaN -> quando não é possivel converter o valor
+        let n = parseFloat('a')
+        console.log(n)
+        console.log(typeof n)
+
+        // converter via metodo
+        let num = 10
+        console.log(String(0))
+        console.log(num.toString())
+        console.log(10.0.toString())
+        console.log(10 .toString())
+        console.log((10).toString())
+        
+
+    </script>
+    
+</body>
+</html>
